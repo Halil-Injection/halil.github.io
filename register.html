@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Register Page</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" media="all" />
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/text.js"></script>
+    </head>
+    <body>
+        <center>
+        <h3>Register Here</h3>
+        <form action="reg.html" method="POST">
+            <table>
+                <tr>
+                    <td>Titel:</td>
+                    <td>
+                        <input type="text" name="Titel" placeholder="Herr oder Frau oder Professor etc" id="register_title" autocomplete="off" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vorname:</td>
+                    <td>
+                        <input type="text" name="Vorname" placeholder="zbs Halil" id="register_vorname" autocomplete="off" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nachname:</td>
+                    <td>
+                        <input type"text" name="Nachname" placeholder="zbs Dilsiz" id="register_nachname" autocomplete="off" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Geburstag:</td>
+                    <td>
+                        <input type"datetime" name="Geburstag" placeholder="zbs am 29.11.2005" id="register_geburstag" autocomplete="off" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Passwort:</td>
+                    <td>
+                        <input type="password" name="Passwort" placeholder="Hello123" id="register_passwort" autocomplete="off" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" name="Email" placeholder="devtechniker@deinserver.net" id="register_email" autocomplete="off" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="Male" id="register_male" /> Male
+                        <input type="radio" name="Female" id="register_female" /> Female
+                        <input type="radio" name="Others" id="register_others" /> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>
+                        <select required>
+                            <option selected>+49</option>
+                            <option>+59</option>
+                            <option>+00</option>
+                            <option>+459</option>
+                            <option>+456</option>
+                        </select>
+                        <input type="phone" name="Phone-Number" placeholder="176 *******" maxlength="16" id="register_phone" autocomplete="off" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="Registieren" value="Register" id="register_button" />
+                    </td>
+
+                    <td>
+                        Already a user?<a href="index.html" target=_blank>Login Here</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </center>
+    </body>
+</html>
